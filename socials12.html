@@ -48,7 +48,11 @@
     .email:hover {
       color: #23c8c8;
     }
+  }
 
+    .paypal:hover {
+      color: #2AABEE;
+    }
   
 
   
@@ -93,7 +97,12 @@
         <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
-
+      
+      <!-- Start Paypal Icon -->
+      <div id="paypal" onclick="navigate(this.id)" class="social">
+        <span class="icon paypal"><i class="fa fa-coffee"></i></span>
+      </div>
+      <!-- End Paypal Icon -->
      
 
 
@@ -138,8 +147,8 @@
         else if (id === "pinterest") {
           window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        else if (id === "paypal") {
+          window.open("https://www.buymeacoffee.com/hrushi.desai", '_blank').focus(); //Add the url to your paypal account
         }
       }
 
