@@ -48,13 +48,15 @@
     .email:hover {
       color: #23c8c8;
     }
-  }
+  
 
     .paypal:hover {
       color: #2AABEE;
     }
   
-
+.gumroad:hover {
+  color: #36a9ae; /* or any other color you prefer */
+}
   
 
     .linkedin:hover {
@@ -103,6 +105,12 @@
         <span class="icon paypal"><i class="fa fa-coffee"></i></span>
       </div>
       <!-- End Paypal Icon -->
+
+      <!-- Start Gumroad Icon -->
+<div id="gumroad" onclick="navigate(this.id)" class="social">
+  <span class="icon gumroad"><i class="fa-solid fa-store"></i></span>
+</div>
+<!-- End Gumroad Icon -->
      
 
 
@@ -149,6 +157,9 @@
         }
         else if (id === "paypal") {
           window.open("https://www.buymeacoffee.com/hrushi.desai", '_blank').focus(); //Add the url to your paypal account
+        }
+        else if (id === "gumroad") {
+          window.open("https://hrushidesai.gumroad.com/", '_blank').focus(); // Replace with your Gumroad page URL
         }
       }
 
