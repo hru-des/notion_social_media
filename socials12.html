@@ -45,6 +45,10 @@
       color: #ffbd2f;
     }
 
+    .substack:hover {
+      color: #1949b8; /* Example Substack brand color */
+    }
+    
     .email:hover {
       color: #23c8c8;
     }
@@ -87,6 +91,10 @@
       </div>
       <!-- End blog Icon -->
 
+      <div id="substack" onclick="navigate(this.id)" class="social">
+        <span class="icon substack"><i class="fa-solid fa-newspaper"></i></span>
+      </div>
+
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
@@ -126,6 +134,10 @@
 
         if (id === "blog")
           window.open("https://medium.com/@hrushi.desai08", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "substack") {
+          window.open("https://hrushikeshdesai.substack.com/", '_blank').focus(); // Replace with your Substack URL
+        }  
 
         else if (id === "email") {
           window.open("mailto:hrushi.desai08@gmail.com", '_blank').focus(); //Add your email after "mailto:""
